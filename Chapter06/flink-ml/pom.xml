@@ -36,7 +36,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<flink.version>1.1.4</flink.version>
+		<flink.version>1.7.2</flink.version>
 	</properties>
 
 	<!-- Execute "mvn clean package -Pbuild-jar" to build a jar file out of 
@@ -54,22 +54,22 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-scala_2.11</artifactId>
+			<artifactId>flink-scala_2.12</artifactId>
 			<version>${flink.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-streaming-scala_2.11</artifactId>
+			<artifactId>flink-streaming-scala_2.12</artifactId>
 			<version>${flink.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-clients_2.11</artifactId>
+			<artifactId>flink-clients_2.12</artifactId>
 			<version>${flink.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-ml_2.11</artifactId>
+			<artifactId>flink-ml_2.12</artifactId>
 			<version>${flink.version}</version>
 		</dependency>
 	</dependencies>
@@ -100,18 +100,18 @@
 								<excludes>
 									<!-- This list contains all dependencies of flink-dist Everything 
 										else will be packaged into the fat-jar -->
-									<exclude>org.apache.flink:flink-shaded-*_2.11</exclude>
-									<exclude>org.apache.flink:flink-core_2.11</exclude>
-									<exclude>org.apache.flink:flink-java_2.11</exclude>
-									<exclude>org.apache.flink:flink-scala_2.11</exclude>
-									<exclude>org.apache.flink:flink-runtime_2.11</exclude>
-									<exclude>org.apache.flink:flink-optimizer_2.11</exclude>
-									<exclude>org.apache.flink:flink-clients_2.11</exclude>
-									<exclude>org.apache.flink:flink-avro_2.11</exclude>
-									<exclude>org.apache.flink:flink-java-examples_2.11</exclude>
-									<exclude>org.apache.flink:flink-scala-examples_2.11</exclude>
-									<exclude>org.apache.flink:flink-streaming-examples_2.11</exclude>
-									<exclude>org.apache.flink:flink-streaming-java_2.11</exclude>
+									<exclude>org.apache.flink:flink-shaded-*_2.12</exclude>
+									<exclude>org.apache.flink:flink-core_2.12</exclude>
+									<exclude>org.apache.flink:flink-java_2.12</exclude>
+									<exclude>org.apache.flink:flink-scala_2.12</exclude>
+									<exclude>org.apache.flink:flink-runtime_2.12</exclude>
+									<exclude>org.apache.flink:flink-optimizer_2.12</exclude>
+									<exclude>org.apache.flink:flink-clients_2.12</exclude>
+									<exclude>org.apache.flink:flink-avro_2.12</exclude>
+									<exclude>org.apache.flink:flink-java-examples_2.12</exclude>
+									<exclude>org.apache.flink:flink-scala-examples_2.12</exclude>
+									<exclude>org.apache.flink:flink-streaming-examples_2.12</exclude>
+									<exclude>org.apache.flink:flink-streaming-java_2.12</exclude>
 
 									<!-- Also exclude very big transitive dependencies of Flink WARNING: 
 										You have to remove these excludes if your code relies on other versions of 
@@ -311,19 +311,19 @@
 			<dependencies>
 				<dependency>
 					<groupId>org.apache.flink</groupId>
-					<artifactId>flink-scala_2.11</artifactId>
+					<artifactId>flink-scala_2.12</artifactId>
 					<version>${flink.version}</version>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>org.apache.flink</groupId>
-					<artifactId>flink-streaming-java_2.11</artifactId>
+					<artifactId>flink-streaming-java_2.12</artifactId>
 					<version>${flink.version}</version>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>org.apache.flink</groupId>
-					<artifactId>flink-clients_2.11</artifactId>
+					<artifactId>flink-clients_2.12</artifactId>
 					<version>${flink.version}</version>
 					<scope>provided</scope>
 				</dependency>
